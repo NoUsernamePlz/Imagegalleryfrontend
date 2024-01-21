@@ -10,7 +10,7 @@ const App = () => {
 
   const handleImageClick = (imageName, imageUrl) => {
     axios
-      .get("/metadata", { params: { image: imageUrl } })
+      .get(`${process.env.REACT_APP_APIROUTE}/metadata`, { params: { image: imageUrl } })
       .then((response) => {
         setMetadata(response.data.metadata);
         console.log(response.data.metadata);

@@ -5,7 +5,7 @@ const Metadata = ({ metadata }) => {
     <div className="w-[100vw] lg:w-[25vw] h-[100vh] overflow-y-auto  bg-[#2E2E2E]">
       {metadata && (
         <div className="h-[80vh] flex flex-col p-4 ">
-          <div className=" text-white text-lg font-bold my-[4vh] pl-4 ">
+          <div className=" text-white text-lg font-medium my-[4vh] pl-4 ">
             About Image
           </div>
           {metadata &&

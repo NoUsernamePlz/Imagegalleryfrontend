@@ -10,7 +10,7 @@ const ImageGallery = ({ handleImageClick, selectedImage }) => {
       <div className="w-[100vw] lg:w-[75vw] h-[65vh] px-[1vw] py-[2vw]">
         {selectedImage && (
           <img
-            src={`http://localhost:3000/api/${selectedImage}`}
+            src={`${process.env.REACT_APP_APIROUTE}/api/${selectedImage}`}
             alt={selectedImage}
             className="w-full h-full object-cover"
           />
@@ -34,7 +34,7 @@ const ImageGallery = ({ handleImageClick, selectedImage }) => {
                   ""
                 )}
                 <img
-                  src={`http://localhost:3000/api/${image.image}`}
+                  src={`${process.env.REACT_APP_APIROUTE}/api/${image.image}`}
                   alt={image.name}
                   className={`w-full h-full object-cover p-2 border-1 mt-[2vw] ${
                     selectedImage === image.image
